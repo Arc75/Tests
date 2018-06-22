@@ -11,7 +11,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Калькулятор выражений польской нотации.");
                 Console.WriteLine("Нажмите Esc, чтобы остановить эту адскую машину");
-                Console.Write("Напишите выражение прямой польской нотации: ");
+                Console.Write("Напишите выражение прямой польской нотации, используя цифры от 0 до 9 и операторы + - * /: ");
 
                 var notation = Console.ReadLine();
 
