@@ -9,9 +9,8 @@ namespace ConsoleApp1
         {
             do
             {
-                Console.WriteLine("Калькулятор выражений польской нотации.");
-                Console.WriteLine("Нажмите Esc, чтобы остановить эту адскую машину");
-                Console.Write("Напишите выражение прямой польской нотации, используя цифры от 0 до 9 и операторы + - * /: ");
+                Console.WriteLine("Calculator of polish notation.");
+                Console.Write("Write the polish notation, using any integral numbers and operators + - * /: ");
 
                 var notation = Console.ReadLine();
 
@@ -19,13 +18,13 @@ namespace ConsoleApp1
 
                 if (String.IsNullOrEmpty(calc.errormessage))
                 {
-                    Console.WriteLine("Результат вычисления: " + calc.NotationResult);                    
+                    Console.WriteLine("Calc result: " + calc.NotationResult);                    
                 }
                 else
                 {
-                    Console.WriteLine("В процессе вычислений возникла ошибка: " + calc.errormessage);
+                    Console.WriteLine("Error appears while calculations: " + calc.errormessage);
                 }
-                Console.WriteLine("Нажмите что-нибудь на клавиатуре чтобы продолжать. Esc чтобы выйти.");
+                Console.WriteLine("Press something to proceed.");
                 Console.ReadKey();
             }
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);            
